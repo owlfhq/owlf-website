@@ -233,31 +233,24 @@
               <span class="wa-contact"><strong>owlf</strong><small>Home services</small></span>
               <span class="wa-menu" aria-hidden="true">⋮</span>
             </div>
-            <div class="chat-thread" aria-live="polite" aria-label="Illustrated example of the new-customer WhatsApp flow">
-              <div class="chat-line outgoing greeting-line"><p id="sample-message">Hi</p><span>You</span></div>
+            <div class="chat-thread" aria-live="polite" aria-label="New-customer WhatsApp request flow">
+              <div class="chat-line outgoing greeting-line"><p>Hi</p><span>You</span></div>
 
               <div class="chat-line incoming welcome-line">
-                <p id="welcome-message">Hi 👋 Welcome to <strong>owlf</strong>.<br>What do you need done? Type it, send a photo or voice note, or tap <strong>Services</strong>.<br>🔒 Only the pro you choose gets your number. No sales calls.</p>
+                <p id="welcome-message">Hi 👋 Welcome to <strong>owlf</strong>.<br>What do you need done? Type it, send a photo or voice note, or tap <strong>Services</strong>.<br>🔒 Only the pro you choose gets your number. No sales calls.<br>Privacy: <span class="privacy-link-placeholder">policy link</span></p>
                 <div class="chat-list-cta" aria-hidden="true"><span>Services</span><span>☷</span></div>
                 <span>owlf</span>
               </div>
 
-              <div class="chat-line outgoing selected-service"><p id="selected-service">Plumbing</p><span>You</span></div>
+              <div class="chat-line outgoing job-description"><p id="sample-message">My kitchen tap is leaking from the base, constant drip</p><span>You</span></div>
 
-              <div class="chat-line incoming sub-picker">
-                <p id="sub-message">🚰 *Plumbing*: pick the closest match, or simply describe the job.</p>
-                <div class="chat-list-cta" aria-hidden="true"><span>Choose</span><span>☷</span></div>
+              <div class="chat-line incoming service-confirmation">
+                <p id="confirmation-message">🚰 <strong>Plumbing · Leak or drip</strong><br>Is that right?</p>
                 <span>owlf</span>
               </div>
+              <div class="chat-actions reply-actions" aria-label="Reply options shown by owlf"><span>Yes</span><span>Change</span></div>
 
-              <div class="chat-line outgoing selected-sub"><p id="selected-sub">Leak or drip</p><span>You</span></div>
-
-              <div class="chat-line incoming describe-line">
-                <p id="describe-message">📝 *Plumbing · Leak or drip*<br>Tell us about the job in a sentence or two.<br>For example: _Water dripping through the ceiling under the bathroom_<br>Photos, videos or a voice note help too (tap 📎).</p>
-                <span>owlf</span>
-              </div>
-
-              <div class="chat-line outgoing desc-example"><p id="description-example">Water dripping through the ceiling under the bathroom</p><span>You</span></div>
+              <div class="chat-line outgoing selected-reply"><p>Yes</p><span>You</span></div>
 
               <div class="chat-line incoming follow-up">
                 <p id="area-prompt">📍 <strong>Where's the job?</strong> Send the postal code or town, or share your location.</p>
@@ -268,14 +261,14 @@
             <div class="chat-input"><span class="smile" aria-hidden="true">☺</span><span>Message</span><span aria-hidden="true">＋</span></div>
           </div>
         </div>
-        <div class="scenario-tabs" role="tablist" aria-label="Choose a service for the example flow">
+        <div class="scenario-tabs" role="tablist" aria-label="Choose a service message">
           <button class="scenario active" type="button" role="tab" aria-selected="true" data-kind="plumbing">Plumbing</button>
           <button class="scenario" type="button" role="tab" aria-selected="false" data-kind="electrical">Electrical</button>
           <button class="scenario" type="button" role="tab" aria-selected="false" data-kind="cleaning">Cleaning</button>
           <button class="scenario" type="button" role="tab" aria-selected="false" data-kind="appliance">Appliances</button>
         </div>
         <a class="conversation-link" data-wa data-message="Hi" href="https://wa.me/?text=Hi">Try starting with “Hi” <span aria-hidden="true">↗</span></a>
-      </div>
+      </div>/div>
     </div>
     <svg class="how-doodle" viewBox="0 0 140 140" aria-hidden="true"><path d="M18 92c25-35 51-52 99-48M22 105c30-35 57-49 100-47M36 45l4 12 12 4-12 4-4 12-4-12-12-4 12-4 4-12Z"/></svg>
   </section>

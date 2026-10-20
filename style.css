@@ -196,12 +196,14 @@ h1 em, h2 em { color: var(--rust); font-weight: 400; }
 .chat-line.incoming { align-self: flex-start; border-top-left-radius: 3px; background: #fffdf7; }
 .greeting-line { animation-delay: .05s; }
 .welcome-line { animation-delay: .12s; }
-.selected-service { animation-delay: .19s; }
-.sub-picker { animation-delay: .26s; }
-.selected-sub { animation-delay: .33s; }
-.describe-line { animation-delay: .40s; }
-.desc-example { animation-delay: .47s; }
-.follow-up { animation-delay: .54s; }
+.job-description { animation-delay: .19s; }
+.service-confirmation { animation-delay: .26s; }
+.reply-actions { animation-delay: .33s; }
+.selected-reply { animation-delay: .40s; }
+.follow-up { animation-delay: .47s; }
+.privacy-link-placeholder { color: #26745e; text-decoration: underline; text-underline-offset: 1px; }
+.chat-actions { display: flex; align-items: center; gap: 5px; width: min(91%, 250px); margin-top: -2px; padding: 5px; border-radius: 8px; background: #fffdf7; box-shadow: 0 1px 1px rgb(28 44 40 / 8%); opacity: 0; animation: bubble-in .42s var(--ease) forwards; }
+.chat-actions span { display: inline-flex; min-width: 0; flex: 1; align-items: center; justify-content: center; padding: 6px 8px; border: 1px solid #d7e0d5; border-radius: 5px; background: #f8fbf6; color: #28705c; font-size: 9px; font-weight: 600; }
 .chat-list-cta { display: flex; align-items: center; justify-content: center; gap: 7px; min-height: 26px; margin-top: 6px; border-top: 1px solid #e7e7df; padding-top: 5px; color: #26745e; font-size: 9px; font-weight: 700; }
 .chat-list-cta span:last-child { font-size: 12px; }
 .location-cta { color: #406c58; }

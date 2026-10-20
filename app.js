@@ -15,45 +15,33 @@
   // selected service -> subcategory list -> selected subcategory -> description -> area.
   const examples = {
     plumbing: {
-      menuChoice: "Plumbing",
       emoji: "🚰",
-      sub: "Leak or drip",
       service: "Plumbing · Leak or drip",
-      example: "Water dripping through the ceiling under the bathroom"
+      message: "My kitchen tap is leaking from the base, constant drip"
     },
     electrical: {
-      menuChoice: "Electrical",
       emoji: "⚡",
-      sub: "Outlets & switches",
-      service: "Electrical · Outlets & switches",
-      example: "Bathroom outlet is dead; the reset button does nothing"
+      service: "Electrical · Lights & fixtures",
+      message: "The lights in my kitchen keep flickering"
     },
     cleaning: {
-      menuChoice: "Cleaning",
       emoji: "🧹",
-      sub: "Deep or move-out clean",
       service: "Cleaning · Deep or move-out clean",
-      example: "Move-out clean of a 2-bedroom apartment"
+      message: "Deep clean of a 2 bedroom apartment"
     },
     appliance: {
-      menuChoice: "Appliance repair",
       emoji: "🧺",
-      sub: "Washer or dryer",
       service: "Appliance repair · Washer or dryer",
-      example: "Washer won't drain, water stays in the drum"
+      message: "Dryer not heating"
     }
   };
 
   const sampleMessage = document.querySelector("#sample-message");
+  const confirmationMessage = document.querySelector("#confirmation-message");
   const serviceBadge = document.querySelector("#sample-service");
-  const selectedService = document.querySelector("#selected-service");
-  const subMessage = document.querySelector("#sub-message");
-  const selectedSub = document.querySelector("#selected-sub");
-  const describeMessage = document.querySelector("#describe-message");
-  const descriptionExample = document.querySelector("#description-example");
   const conversationLink = document.querySelector(".conversation-link");
   const scenarioButtons = Array.from(document.querySelectorAll(".scenario"));
-  const chatLines = Array.from(document.querySelectorAll(".chat-line"));
+  const animatedChatItems = Array.from(document.querySelectorAll(".chat-line, .chat-actions"));
 
   function escapeHtml(value) {
     return value.replace(/[&<>"]/g, (char) => ({
@@ -70,24 +58,16 @@
 
   function selectExample(kind) {
     const example = examples[kind];
-    if (!example || !sampleMessage || !selectedService || !subMessage || !selectedSub ||
-        !describeMessage || !descriptionExample || !serviceBadge || !conversationLink) return;
+    if (!example || !sampleMessage || !confirmationMessage || !serviceBadge || !conversationLink) return;
 
-    // Greeting and welcome list stay the same: this is the fresh-customer "Hi" path.
-    sampleMessage.textContent = "Hi";
+    // This is the tested new-customer path: Hi → welcome → typed job → Yes/Change → location.
+    sampleMessage.textContent = example.message;
+    confirmationMessage.innerHTML = whatsappHtml(
+      example.emoji + " *" + example.service + "*\nIs that right?"
+    );
     serviceBadge.textContent = "NEW CUSTOMER";
-    selectedService.textContent = example.menuChoice;
-    subMessage.innerHTML = whatsappHtml(
-      example.emoji + " *" + example.menuChoice + "*: pick the closest match, or simply describe the job."
-    );
-    selectedSub.textContent = example.sub;
-    describeMessage.innerHTML = whatsappHtml(
-      "📝 *" + example.service + "*\n" +
-      "Tell us about the job in a sentence or two.\n" +
-      "For example: _" + example.example + "_\n" +
-      "Photos, videos or a voice note help too (tap 📎)."
-    );
-    descriptionExample.textContent = example.example;
+
+    // The main link intentionally opens the real greeting draft; it does not pretend to send it.
     conversationLink.dataset.message = "Hi";
     conversationLink.href = whatsappDraftUrl("Hi");
 
@@ -97,10 +77,10 @@
       button.setAttribute("aria-selected", String(selected));
     });
 
-    chatLines.forEach((line) => {
-      line.style.animation = "none";
-      void line.offsetHeight;
-      line.style.animation = "";
+    animatedChatItems.forEach((item) => {
+      item.style.animation = "none";
+      void item.offsetHeight;
+      item.style.animation = "";
     });
   }
 
@@ -118,6 +98,9 @@
       }
     });
   });
+
+  // Format the initial Plumbing state too; otherwise the raw WhatsApp asterisks show until a tab is clicked.
+  selectExample("plumbing");
 
   const menuButton = document.querySelector(".menu-toggle");
   const menu = document.querySelector("#main-nav");
