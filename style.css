@@ -198,7 +198,6 @@ h1 em, h2 em { color: var(--rust); font-weight: 400; }
 .welcome-line { animation-delay: .12s; }
 .job-description { animation-delay: .19s; }
 .service-confirmation { animation-delay: .26s; }
-.reply-actions { animation-delay: .33s; }
 .selected-reply { animation-delay: .40s; }
 .follow-up { animation-delay: .47s; }
 .privacy-link-placeholder { color: #26745e; text-decoration: underline; text-underline-offset: 1px; }
