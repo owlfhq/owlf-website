@@ -221,8 +221,8 @@
 
       <div class="conversation-card reveal" id="conversation">
         <div class="conversation-heading">
-          <div><span class="small-spark" aria-hidden="true">✳</span><span>HOW THE CHAT STARTS</span></div>
-          <span class="conversation-label" id="sample-service">PLUMBING</span>
+          <div><span class="small-spark" aria-hidden="true">✳</span><span>A FIRST MESSAGE</span></div>
+          <span class="conversation-label" id="sample-service">NEW CUSTOMER</span>
         </div>
         <div class="phone">
           <div class="phone-hardware"><span></span><i></i></div>
@@ -233,30 +233,48 @@
               <span class="wa-contact"><strong>owlf</strong><small>Home services</small></span>
               <span class="wa-menu" aria-hidden="true">⋮</span>
             </div>
-            <div class="chat-thread" aria-live="polite" aria-label="Illustrated WhatsApp request flow">
-              <div class="chat-line outgoing"><p id="sample-message">Hi, my kitchen tap keeps dripping, even when it’s turned off. Could someone help?</p><span>You</span></div>
-              <div class="chat-line incoming">
-                <p class="service-confirmation"><span id="service-emoji">🚰</span> <strong id="service-label">Plumbing · Leak or drip</strong><br>Is that right?</p>
+            <div class="chat-thread" aria-live="polite" aria-label="Illustrated example of the new-customer WhatsApp flow">
+              <div class="chat-line outgoing greeting-line"><p id="sample-message">Hi</p><span>You</span></div>
+
+              <div class="chat-line incoming welcome-line">
+                <p id="welcome-message">Hi 👋 Welcome to *owlf*.<br>What do you need done? Type it, send a photo or voice note, or tap *Services*.<br>🔒 Only the pro you choose gets your number. No sales calls.</p>
+                <div class="chat-list-cta" aria-hidden="true"><span>Services</span><span>☷</span></div>
                 <span>owlf</span>
               </div>
-              <div class="chat-actions" aria-label="Reply options shown by owlf"><span>Yes</span><span>Change</span></div>
-              <div class="chat-line outgoing selected-reply"><p>Yes</p><span>You</span></div>
+
+              <div class="chat-line outgoing selected-service"><p id="selected-service">Plumbing</p><span>You</span></div>
+
+              <div class="chat-line incoming sub-picker">
+                <p id="sub-message">🚰 *Plumbing*: pick the closest match, or simply describe the job.</p>
+                <div class="chat-list-cta" aria-hidden="true"><span>Choose</span><span>☷</span></div>
+                <span>owlf</span>
+              </div>
+
+              <div class="chat-line outgoing selected-sub"><p id="selected-sub">Leak or drip</p><span>You</span></div>
+
+              <div class="chat-line incoming describe-line">
+                <p id="describe-message">📝 *Plumbing · Leak or drip*<br>Tell us about the job in a sentence or two.<br>For example: _Water dripping through the ceiling under the bathroom_<br>Photos, videos or a voice note help too (tap 📎).</p>
+                <span>owlf</span>
+              </div>
+
+              <div class="chat-line outgoing desc-example"><p id="description-example">Water dripping through the ceiling under the bathroom</p><span>You</span></div>
+
               <div class="chat-line incoming follow-up">
-                <p id="area-prompt">📍 Where’s the job? Send your postal code or town, or share your location.</p>
+                <p id="area-prompt">📍 *Where's the job?* Send the postal code or town, or share your location.</p>
+                <div class="chat-list-cta location-cta" aria-hidden="true"><span>Send location</span><span>⌖</span></div>
                 <span>owlf</span>
               </div>
-              <div class="send-location"><span class="location-pin" aria-hidden="true">⌖</span><span>Send location</span><span aria-hidden="true">↗</span></div>
             </div>
             <div class="chat-input"><span class="smile" aria-hidden="true">☺</span><span>Message</span><span aria-hidden="true">＋</span></div>
           </div>
         </div>
-        <div class="scenario-tabs" role="tablist" aria-label="See how a different service request starts">
+        <div class="scenario-tabs" role="tablist" aria-label="Choose a service for the example flow">
           <button class="scenario active" type="button" role="tab" aria-selected="true" data-kind="plumbing">Plumbing</button>
           <button class="scenario" type="button" role="tab" aria-selected="false" data-kind="electrical">Electrical</button>
           <button class="scenario" type="button" role="tab" aria-selected="false" data-kind="cleaning">Cleaning</button>
           <button class="scenario" type="button" role="tab" aria-selected="false" data-kind="appliance">Appliances</button>
         </div>
-        <a class="conversation-link" data-wa data-message="Hi, my kitchen tap keeps dripping, even when it’s turned off. Could someone help?" href="https://wa.me/?text=Hi">Start with this message <span aria-hidden="true">↗</span></a>
+        <a class="conversation-link" data-wa data-message="Hi" href="https://wa.me/?text=Hi">Try starting with “Hi” <span aria-hidden="true">↗</span></a>
       </div>
     </div>
     <svg class="how-doodle" viewBox="0 0 140 140" aria-hidden="true"><path d="M18 92c25-35 51-52 99-48M22 105c30-35 57-49 100-47M36 45l4 12 12 4-12 4-4 12-4-12-12-4 12-4 4-12Z"/></svg>

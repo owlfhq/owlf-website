@@ -1,62 +1,92 @@
-(() => {
-  "use strict";
-
   const whatsappDraftUrl = (message) =>
     "https://wa.me/?text=" + encodeURIComponent(message);
 
   document.querySelectorAll("a[data-wa]").forEach((link) => {
-    const message = link.dataset.message || "Hi, I’d like to ask about a home service.";
+    const message = link.dataset.message || "Hi";
     link.href = whatsappDraftUrl(message);
     link.target = "_blank";
     link.rel = "noopener noreferrer";
   });
 
+  // The base path is the tested fresh-customer flow: "Hi" -> welcome list ->
+  // selected service -> subcategory list -> selected subcategory -> description -> area.
   const examples = {
     plumbing: {
-      label: "PLUMBING",
+      menuChoice: "Plumbing",
       emoji: "🚰",
+      sub: "Leak or drip",
       service: "Plumbing · Leak or drip",
-      message: "Hi, my kitchen tap keeps dripping, even when it’s turned off. Could someone help?"
+      example: "Water dripping through the ceiling under the bathroom"
     },
     electrical: {
-      label: "ELECTRICAL",
+      menuChoice: "Electrical",
       emoji: "⚡",
-      service: "Electrical · Lights & fixtures",
-      message: "Hi, the lights in my hallway keep flickering. Could someone take a look?"
+      sub: "Outlets & switches",
+      service: "Electrical · Outlets & switches",
+      example: "Bathroom outlet is dead; the reset button does nothing"
     },
     cleaning: {
-      label: "CLEANING",
+      menuChoice: "Cleaning",
       emoji: "🧹",
+      sub: "Deep or move-out clean",
       service: "Cleaning · Deep or move-out clean",
-      message: "Hi, I’m moving out and need the apartment cleaned before the end of the month."
+      example: "Move-out clean of a 2-bedroom apartment"
     },
     appliance: {
-      label: "APPLIANCES",
+      menuChoice: "Appliance repair",
       emoji: "🧺",
+      sub: "Washer or dryer",
       service: "Appliance repair · Washer or dryer",
-      message: "Hi, my washing machine won’t drain after a cycle. Could someone help?"
+      example: "Washer won't drain, water stays in the drum"
     }
   };
 
   const sampleMessage = document.querySelector("#sample-message");
-  const serviceLabel = document.querySelector("#service-label");
-  const serviceEmoji = document.querySelector("#service-emoji");
   const serviceBadge = document.querySelector("#sample-service");
+  const selectedService = document.querySelector("#selected-service");
+  const subMessage = document.querySelector("#sub-message");
+  const selectedSub = document.querySelector("#selected-sub");
+  const describeMessage = document.querySelector("#describe-message");
+  const descriptionExample = document.querySelector("#description-example");
   const conversationLink = document.querySelector(".conversation-link");
   const scenarioButtons = Array.from(document.querySelectorAll(".scenario"));
   const chatLines = Array.from(document.querySelectorAll(".chat-line"));
-  const chatActions = document.querySelector(".chat-actions");
+
+  function escapeHtml(value) {
+    return value.replace(/[&<>"]/g, (char) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"
+    })[char]);
+  }
+
+  function whatsappHtml(value) {
+    return escapeHtml(value)
+      .replace(/\*([^*]+)\*/g, "<strong>$1</strong>")
+      .replace(/_([^_]+)_/g, "<em>$1</em>")
+      .replace(/\n/g, "<br>");
+  }
 
   function selectExample(kind) {
     const example = examples[kind];
-    if (!example || !sampleMessage || !serviceLabel || !serviceEmoji || !serviceBadge || !conversationLink) return;
+    if (!example || !sampleMessage || !selectedService || !subMessage || !selectedSub ||
+        !describeMessage || !descriptionExample || !serviceBadge || !conversationLink) return;
 
-    sampleMessage.textContent = example.message;
-    serviceLabel.textContent = example.service;
-    serviceEmoji.textContent = example.emoji;
-    serviceBadge.textContent = example.label;
-    conversationLink.dataset.message = example.message;
-    conversationLink.href = whatsappDraftUrl(example.message);
+    // Greeting and welcome list stay the same: this is the fresh-customer "Hi" path.
+    sampleMessage.textContent = "Hi";
+    serviceBadge.textContent = "NEW CUSTOMER";
+    selectedService.textContent = example.menuChoice;
+    subMessage.innerHTML = whatsappHtml(
+      example.emoji + " *" + example.menuChoice + "*: pick the closest match, or simply describe the job."
+    );
+    selectedSub.textContent = example.sub;
+    describeMessage.innerHTML = whatsappHtml(
+      "📝 *" + example.service + "*\n" +
+      "Tell us about the job in a sentence or two.\n" +
+      "For example: _" + example.example + "_\n" +
+      "Photos, videos or a voice note help too (tap 📎)."
+    );
+    descriptionExample.textContent = example.example;
+    conversationLink.dataset.message = "Hi";
+    conversationLink.href = whatsappDraftUrl("Hi");
 
     scenarioButtons.forEach((button) => {
       const selected = button.dataset.kind === kind;
@@ -64,7 +94,7 @@
       button.setAttribute("aria-selected", String(selected));
     });
 
-    [...chatLines, ...(chatActions ? [chatActions] : [])].forEach((line) => {
+    chatLines.forEach((line) => {
       line.style.animation = "none";
       void line.offsetHeight;
       line.style.animation = "";
