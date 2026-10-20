@@ -6,7 +6,8 @@ Static, responsive landing page for the OWLF local home-services marketplace.
 
 - `index.html` — page structure, service catalogue, hero illustration and WhatsApp conversation sample.
 - `style.css` — layout, responsive styles and motion.
-- `app.js` — WhatsApp draft links, conversation examples, mobile navigation and reveal animations.
+- `app.js` — WhatsApp draft links, mobile navigation and reveal animations.
+- `COPY_GUIDELINES.md` — editorial rules used to keep website copy human, accurate and consistent.
 - `favicon.svg` — OWLF mark.
 - `assets/home-services-icon-set.png` — the supplied icon sheet, recoloured to the OWLF category palette while preserving the artwork and transparency.
 - `assets/home-services-icon-set-original.png` — byte-for-byte copy of the supplied sheet before colour adjustments.
@@ -17,7 +18,7 @@ Open `index.html` in a browser for a local preview. The page has no package inst
 
 The eight service groups and subcategories shown on the page follow the customer-facing `BROWSE_CATALOG` in the separate WhatsApp webhook project. Wording has been localized for Canada while preserving the listed service intent. Availability is described as area-dependent; the website makes no provider, price, review, response-time or guarantee claims.
 
-The phone is labelled as illustrative. Its location prompt follows the current request flow. The example messages are written for the site and are not copied from test fixtures or presented as real customer conversations.
+The page no longer includes a simulated chat. Service-card links open a prepared WhatsApp message; the visitor must choose a recipient before sending.
 
 ## WhatsApp links
 
@@ -29,4 +30,4 @@ The separate webhook repository identifies itself as a private technical proof a
 
 The customer browse menu has eight groups, but the current webhook acknowledgement uses canonical `legacyCategory` values. As a result, AC can be acknowledged as `AC Repair`, appliances as `Appliance Service`, and cleaning, moving and snow clearing as `Home Maintenance`. The preview chat mirrors those current labels. Aligning the labels requires a backend change.
 
-The number-free links open a WhatsApp draft and recipient picker. They do not open a direct OWLF conversation.
+The number-free links open a WhatsApp message draft and leave recipient selection to the visitor. Do not describe this as a direct chat with owlf until a destination number is configured.
