@@ -207,14 +207,57 @@
 
   <section class="how" id="how">
     <div class="wrap how-grid">
-      <div class="how-intro reveal">
-        <h2>Here’s how<br><em>it works.</em></h2>
+      <div class="how-copy">
+        <div class="how-intro reveal">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-rule"></span>How it works</p>
+          <h2>Here’s how<br><em>it works.</em></h2>
+        </div>
+        <ol class="steps reveal" aria-label="How to start a home service request">
+          <li><span class="step-number">01</span><div><h3>Describe the job</h3><p>Choose a service, or describe what needs doing.</p></div></li>
+          <li><span class="step-number">02</span><div><h3>Share your area</h3><p>Send a WhatsApp location pin or enter your city or neighbourhood.</p></div></li>
+          <li><span class="step-number">03</span><div><h3>Let’s get it sorted</h3><p>We’ll guide you through the request in WhatsApp.</p></div></li>
+        </ol>
       </div>
-      <ol class="steps reveal" aria-label="How to start a home service request">
-        <li><span class="step-number">01</span><div><h3>Describe the job</h3><p>Choose a service, or describe what needs doing.</p></div></li>
-        <li><span class="step-number">02</span><div><h3>Share your area</h3><p>Send a WhatsApp location pin or enter your city or neighbourhood.</p></div></li>
-        <li><span class="step-number">03</span><div><h3>Let’s get it sorted</h3><p>We’ll guide you through the request in WhatsApp.</p></div></li>
-      </ol>
+
+      <div class="conversation-card reveal" id="conversation">
+        <div class="conversation-heading">
+          <div><span class="small-spark" aria-hidden="true">✳</span><span>HOW THE CHAT STARTS</span></div>
+          <span class="conversation-label" id="sample-service">PLUMBING</span>
+        </div>
+        <div class="phone">
+          <div class="phone-hardware"><span></span><i></i></div>
+          <div class="phone-screen">
+            <div class="wa-header">
+              <span class="wa-back" aria-hidden="true">‹</span>
+              <span class="wa-avatar"><svg aria-hidden="true"><use href="#icon-owl"/></svg></span>
+              <span class="wa-contact"><strong>owlf</strong><small>Home services</small></span>
+              <span class="wa-menu" aria-hidden="true">⋮</span>
+            </div>
+            <div class="chat-thread" aria-live="polite" aria-label="Illustrated WhatsApp request flow">
+              <div class="chat-line outgoing"><p id="sample-message">Hi, my kitchen tap keeps dripping, even when it’s turned off. Could someone help?</p><span>You</span></div>
+              <div class="chat-line incoming">
+                <p class="service-confirmation"><span id="service-emoji">🚰</span> <strong id="service-label">Plumbing · Leak or drip</strong><br>Is that right?</p>
+                <span>owlf</span>
+              </div>
+              <div class="chat-actions" aria-label="Reply options shown by owlf"><span>Yes</span><span>Change</span></div>
+              <div class="chat-line outgoing selected-reply"><p>Yes</p><span>You</span></div>
+              <div class="chat-line incoming follow-up">
+                <p id="area-prompt">📍 Where’s the job? Send your postal code or town, or share your location.</p>
+                <span>owlf</span>
+              </div>
+              <div class="send-location"><span class="location-pin" aria-hidden="true">⌖</span><span>Send location</span><span aria-hidden="true">↗</span></div>
+            </div>
+            <div class="chat-input"><span class="smile" aria-hidden="true">☺</span><span>Message</span><span aria-hidden="true">＋</span></div>
+          </div>
+        </div>
+        <div class="scenario-tabs" role="tablist" aria-label="See how a different service request starts">
+          <button class="scenario active" type="button" role="tab" aria-selected="true" data-kind="plumbing">Plumbing</button>
+          <button class="scenario" type="button" role="tab" aria-selected="false" data-kind="electrical">Electrical</button>
+          <button class="scenario" type="button" role="tab" aria-selected="false" data-kind="cleaning">Cleaning</button>
+          <button class="scenario" type="button" role="tab" aria-selected="false" data-kind="appliance">Appliances</button>
+        </div>
+        <a class="conversation-link" data-wa data-message="Hi, my kitchen tap keeps dripping, even when it’s turned off. Could someone help?" href="https://wa.me/?text=Hi">Start with this message <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
     <svg class="how-doodle" viewBox="0 0 140 140" aria-hidden="true"><path d="M18 92c25-35 51-52 99-48M22 105c30-35 57-49 100-47M36 45l4 12 12 4-12 4-4 12-4-12-12-4 12-4 4-12Z"/></svg>
   </section>
