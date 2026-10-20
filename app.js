@@ -1,3 +1,6 @@
+(() => {
+  "use strict";
+
   const whatsappDraftUrl = (message) =>
     "https://wa.me/?text=" + encodeURIComponent(message);
 
