@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OWLF — On-Demand Local Services via WhatsApp</title>
-  <meta name="description" content="Connect with verified local service professionals instantly on WhatsApp. Reliable home repairs, cleaning, plumbing, electrical, and more at owlf.one.">
-  <link rel="canonical" href="https://owlf.one">
+  <meta name="description" content="Connect with verified local service professionals instantly on WhatsApp. Reliable plumbers, electricians, cleaners, and appliance technicians at owlf.one. Zero app downloads.">
+  <link rel="canonical" href="https://owlf.one/">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   
-  <!-- Open Graph / Social -->
+  <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://owlf.one/">
   <meta property="og:title" content="OWLF — On-Demand Local Services via WhatsApp">
-  <meta property="og:description" content="Book vetted local pros for plumbing, electrical, cleaning, and maintenance in seconds directly through WhatsApp.">
+  <meta property="og:description" content="Book vetted local pros for plumbing, electrical, cleaning, and maintenance in 3 minutes directly through WhatsApp.">
   <meta property="og:site_name" content="OWLF">
   
-  <!-- Twitter -->
+  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="OWLF — On-Demand Local Services via WhatsApp">
   <meta name="twitter:description" content="Instant local service dispatch on WhatsApp. Zero apps required.">
@@ -24,177 +24,937 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
   <header class="header">
     <div class="container nav">
       <a href="/" class="brand" aria-label="OWLF Home">
-        <div class="brand-icon">O</div>
+        <div class="brand-icon">
+          <!-- Friendly Owl Logo Vector -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 20 C32 20 20 34 20 52 C20 72 34 82 50 82 C66 82 80 72 80 52 C80 34 68 20 50 20 Z" fill="#ffffff" fill-opacity="0.2"/>
+            <circle cx="37" cy="46" r="11" fill="#ffffff"/>
+            <circle cx="63" cy="46" r="11" fill="#ffffff"/>
+            <circle cx="38" cy="46" r="6" fill="#065f46"/>
+            <circle cx="62" cy="46" r="6" fill="#065f46"/>
+            <circle cx="36" cy="44" r="2" fill="#ffffff"/>
+            <circle cx="60" cy="44" r="2" fill="#ffffff"/>
+            <polygon points="50,54 44,63 56,63" fill="#f59e0b"/>
+          </svg>
+        </div>
         <span>OWLF</span>
       </a>
+
       <nav class="nav-links">
         <a href="#services">Services</a>
+        <a href="#simulator">Live Demo</a>
         <a href="#how-it-works">How It Works</a>
-        <a href="#benefits">Why OWLF</a>
-        <a href="#providers">For Providers</a>
+        <a href="#why-owlf">Why WhatsApp</a>
+        <a href="#providers">Join as Provider</a>
       </nav>
-      <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20assistance%20with%20a%20local%20service" class="btn btn-primary" target="_blank" rel="noopener">
-        <span>Book on WhatsApp</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+
+      <a href="https://wa.me/?text=Hi%20OWLF!%20I%20need%20assistance%20with%20a%20local%20service." class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.6L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.32 4.55 17.88 6.11C19.44 7.67 20.3 9.74 20.3 11.94C20.29 16.48 16.6 20.15 12.05 20.15Z"/></svg>
+        <span>Chat on WhatsApp</span>
       </a>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          <span>Instant WhatsApp Dispatch &bull; No App Download Needed</span>
+    <!-- ==========================================================================
+         Hero Section with Interactive WhatsApp Phone Simulator
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Left Column: Copy & Value Proposition -->
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pulse-dot"></span>
+            <span>Verified Local Pros On-Duty &bull; 3-Minute In-Chat Match</span>
+          </div>
+
+          <h1 class="hero-title">
+            Local Home Services.<br>
+            Zero Apps to Download.<br>
+            <span class="gradient-text">Just Text on WhatsApp.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Need an emergency plumber, electrician, AC specialist, or deep cleaning? Chat with OWLF. We match your request with verified neighborhood professionals in under 3 minutes with upfront transparent quotes.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://wa.me/?text=Hi%20OWLF!%20I%20need%20help%20with%20a%20local%20service." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.6L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.32 4.55 17.88 6.11C19.44 7.67 20.3 9.74 20.3 11.94C20.29 16.48 16.6 20.15 12.05 20.15Z"/></svg>
+              <span>Book on WhatsApp Now</span>
+            </a>
+            <a href="#services" class="btn btn-outline btn-lg">
+              <span>Explore Services &darr;</span>
+            </a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="badge-item">
+              <span class="badge-icon">⭐</span>
+              <span><strong>4.9/5</strong> Rating</span>
+            </div>
+            <div class="badge-item">
+              <span class="badge-icon">🛡️</span>
+              <span><strong>100%</strong> Background Checked</span>
+            </div>
+            <div class="badge-item">
+              <span class="badge-icon">⚡</span>
+              <span><strong>&lt; 3 Mins</strong> Match Time</span>
+            </div>
+            <div class="badge-item">
+              <span class="badge-icon">🚫</span>
+              <span><strong>0MB</strong> App Storage</span>
+            </div>
+          </div>
         </div>
-        <h1 class="hero-title">
-          Local Services, On-Demand <br><span class="gradient-text">Right Inside WhatsApp</span>
-        </h1>
-        <p class="hero-sub">
-          Need a plumber, electrician, cleaner, or technician? Chat directly with OWLF. We match your request with vetted local professionals in minutes.
-        </p>
-        <div class="hero-actions">
-          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20a%20service" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.6L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.32 4.55 17.88 6.11C19.44 7.67 20.3 9.74 20.3 11.94C20.29 16.48 16.6 20.15 12.05 20.15Z"/></svg>
-            <span>Start WhatsApp Chat</span>
+
+        <!-- Right Column: Interactive WhatsApp Phone Mockup -->
+        <div class="mockup-container" id="simulator">
+          <!-- Floating Reaction Badges -->
+          <div class="float-tag float-tag-left">
+            <span>🛡️</span>
+            <span>Verified Local Specialist</span>
+          </div>
+
+          <div class="float-tag float-tag-right">
+            <span>⚡</span>
+            <span>Matched in 2m 14s</span>
+          </div>
+
+          <!-- Smartphone Frame -->
+          <div class="phone-card">
+            <!-- Notch -->
+            <div class="phone-notch">
+              <div class="notch-camera"></div>
+              <div class="notch-speaker"></div>
+            </div>
+
+            <!-- WhatsApp Header -->
+            <div class="wa-header">
+              <div class="wa-avatar">
+                <svg viewBox="0 0 100 100" class="wa-avatar-img">
+                  <circle cx="50" cy="50" r="45" fill="#059669"/>
+                  <circle cx="38" cy="46" r="10" fill="#ffffff"/>
+                  <circle cx="62" cy="46" r="10" fill="#ffffff"/>
+                  <circle cx="39" cy="46" r="5" fill="#064e3b"/>
+                  <circle cx="61" cy="46" r="5" fill="#064e3b"/>
+                  <polygon points="50,54 44,63 56,63" fill="#f59e0b"/>
+                </svg>
+                <div class="wa-online-dot"></div>
+              </div>
+              <div class="wa-info">
+                <div class="wa-name">
+                  <span>OWLF Services</span>
+                  <span class="wa-badge" title="Verified Business">✓</span>
+                </div>
+                <div class="wa-status">Online &bull; Instant Dispatch</div>
+              </div>
+            </div>
+
+            <!-- Interactive Scenario Pills -->
+            <div class="scenario-selector" id="scenarioBar">
+              <button class="scenario-btn active" data-scenario="plumbing">🚰 Leaky Sink</button>
+              <button class="scenario-btn" data-scenario="ac">❄️ AC Not Cooling</button>
+              <button class="scenario-btn" data-scenario="cleaning">🧹 Deep Clean</button>
+              <button class="scenario-btn" data-scenario="electric">⚡ Power Trip</button>
+            </div>
+
+            <!-- WhatsApp Message Thread -->
+            <div class="wa-chat-body" id="chatThread">
+              <!-- Customer Message -->
+              <div class="wa-bubble wa-user">
+                <span id="userMsgText">Hey OWLF, my kitchen sink pipe is leaking water all over the floor. Need urgent help! 💧</span>
+                <span class="wa-time">10:42 AM <span class="wa-ticks">✓✓</span></span>
+              </div>
+
+              <!-- Bot Response -->
+              <div class="wa-bubble wa-bot">
+                <span id="botIntroText">Hi there! 🦉 We found <strong>2 verified plumbers</strong> 1.4 km from your address.</span>
+                
+                <div class="wa-offer-card" id="botOfferCard">
+                  <div class="wa-offer-top">
+                    <span id="proName">Rajesh Kumar &bull; Master Plumber</span>
+                    <span class="wa-offer-rating">★ 4.9 (140+ jobs)</span>
+                  </div>
+                  <div style="font-size: 0.72rem; color: #64748b; margin-top: 2px;" id="proEta">
+                    ⏱️ Arrives in 25 mins &bull; 🛡️ ID & Police Verified
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px;">
+                    <span style="font-size: 0.75rem; color: #475569;">Upfront Inspection:</span>
+                    <span class="wa-offer-quote" id="proPrice">$35 - $50 (Fix included)</span>
+                  </div>
+                </div>
+
+                <a href="https://wa.me/?text=Hi%20OWLF!%20Please%20confirm%20the%20booking%20for%20Rajesh%20Kumar." class="wa-action-btn" id="botCtaBtn" target="_blank" rel="noopener">
+                  Confirm Booking on WhatsApp &rarr;
+                </a>
+                <span class="wa-time">10:43 AM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Constantly Moving Service Stripes (Infinite Dual Marquee)
+         ========================================================================== -->
+    <section class="marquee-section" aria-label="Available Local Services Strip">
+      <div class="marquee-header-pill">
+        ⚡ Constantly Dispatched Across Local Neighborhoods &bull; Live Coverage
+      </div>
+
+      <div class="marquee-wrapper">
+        <!-- Top Track: Sliding Left -->
+        <div class="marquee-track track-left">
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Emergency%20Plumbing." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🔧</span>
+            <span>Emergency Plumbing</span>
+            <span class="pill-tag" style="background:#e0f2fe; color:#0284c7;">Available</span>
           </a>
-          <a href="#how-it-works" class="btn btn-secondary btn-lg">
-            <span>Learn How It Works</span>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Electrical%20Repair." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">⚡</span>
+            <span>Electrical &amp; Wiring</span>
+            <span class="pill-tag" style="background:#fef3c7; color:#d97706;">Instant Match</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20AC%20Servicing." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">❄️</span>
+            <span>AC Repair &amp; Gas Refill</span>
+            <span class="pill-tag" style="background:#ccfbf1; color:#0d9488;">Seasonal</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Deep%20Home%20Cleaning." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🧹</span>
+            <span>Deep Home Cleaning</span>
+            <span class="pill-tag" style="background:#d1fae5; color:#059669;">Top Rated</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Carpentry%20Work." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🔨</span>
+            <span>Custom Carpentry &amp; Doors</span>
+            <span class="pill-tag" style="background:#ffedd5; color:#ea580c;">Verified</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Appliance%20Repair." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🧺</span>
+            <span>Washing Machine Fix</span>
+            <span class="pill-tag" style="background:#ede9fe; color:#7c3aed;">Same Day</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Wall%20Painting." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🎨</span>
+            <span>Room Painting &amp; Patches</span>
+            <span class="pill-tag" style="background:#ffe4e6; color:#e11d48;">Clean Work</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Pest%20Control." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🪳</span>
+            <span>Herbal Pest Control</span>
+            <span class="pill-tag" style="background:#ecfccb; color:#65a30d;">Safe</span>
+          </a>
+          <!-- Duplicate set for seamless continuous infinite scroll -->
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Emergency%20Plumbing." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🔧</span>
+            <span>Emergency Plumbing</span>
+            <span class="pill-tag" style="background:#e0f2fe; color:#0284c7;">Available</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Electrical%20Repair." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">⚡</span>
+            <span>Electrical &amp; Wiring</span>
+            <span class="pill-tag" style="background:#fef3c7; color:#d97706;">Instant Match</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20AC%20Servicing." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">❄️</span>
+            <span>AC Repair &amp; Gas Refill</span>
+            <span class="pill-tag" style="background:#ccfbf1; color:#0d9488;">Seasonal</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Deep%20Home%20Cleaning." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🧹</span>
+            <span>Deep Home Cleaning</span>
+            <span class="pill-tag" style="background:#d1fae5; color:#059669;">Top Rated</span>
           </a>
         </div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <div class="stat-num">&lt; 3 Min</div>
-            <div class="stat-label">Average Match Time</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">100%</div>
-            <div class="stat-label">Verified Providers</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">0 Apps</div>
-            <div class="stat-label">Everything on WhatsApp</div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Services Grid -->
-    <section id="services" class="section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Capabilities</div>
-          <h2 class="section-title">Popular Local Services</h2>
-          <p class="section-sub">From emergency fixes to planned home care, book verified specialists with a single text message.</p>
-        </div>
-
-        <div class="grid-3">
-          <div class="service-card">
-            <div class="service-icon">&#9881;</div>
-            <h3 class="service-name">Plumbing Services</h3>
-            <p class="service-desc">Leak repairs, pipe installations, drain cleaning, tap & bathroom fixture replacements by certified plumbers.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">&#9889;</div>
-            <h3 class="service-name">Electrical & Wiring</h3>
-            <p class="service-desc">Short-circuit fixes, switchboard setups, fan & lighting installation, rewiring, and surge inspections.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">&#10024;</div>
-            <h3 class="service-name">Home & Deep Cleaning</h3>
-            <p class="service-desc">Sanitized deep cleaning for kitchens, bathrooms, sofas, balconies, and full residential move-in resets.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">&#128295;</div>
-            <h3 class="service-name">Appliance Repair</h3>
-            <p class="service-desc">AC repair and gas filling, washing machine maintenance, refrigerator servicing, and microwave fixes.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">&#129681;</div>
-            <h3 class="service-name">Carpentry & Assembly</h3>
-            <p class="service-desc">Custom furniture assembly, door hinge and lock repairs, modular shelving, and wood surface restoration.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">&#128396;</div>
-            <h3 class="service-name">Painting & Touch-ups</h3>
-            <p class="service-desc">Interior room painting, waterproof wall treatments, patch repair, and exterior color touch-ups.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works -->
-    <section id="how-it-works" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Workflow</div>
-          <h2 class="section-title">How OWLF Works</h2>
-          <p class="section-sub">Fast, transparent, and completely free of clunky apps or passwords.</p>
-        </div>
-
-        <div class="grid-3">
-          <div class="step-card">
-            <div class="step-num">01</div>
-            <h3 class="step-title">Text Your Requirement</h3>
-            <p class="step-desc">Open WhatsApp and tell us what you need, your neighborhood, and your preferred service time.</p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-num">02</div>
-            <h3 class="step-title">Instant Provider Match</h3>
-            <p class="step-desc">Our automated dispatch engine matches your request with trusted, verified local service professionals nearby.</p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-num">03</div>
-            <h3 class="step-title">Job Done & Certified</h3>
-            <p class="step-desc">The provider arrives at your doorstep, completes the work to high standards, and you pay transparently.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Banner -->
-    <section id="providers" class="section">
-      <div class="container">
-        <div class="cta-banner">
-          <h2>Are You a Local Service Professional?</h2>
-          <p>Join the OWLF partner network. Receive verified customer service requests directly on WhatsApp without upfront fees.</p>
-          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20am%20a%20service%20provider%20interested%20in%20joining" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-            <span>Apply as a Partner</span>
+        <!-- Bottom Track: Sliding Right -->
+        <div class="marquee-track track-right">
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Water%20Heater%20Installation." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🚿</span>
+            <span>Water Heater Installation</span>
+            <span class="pill-tag" style="background:#e0f2fe; color:#0284c7;">Geyser Pro</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Refrigerator%20Repair." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🧊</span>
+            <span>Refrigerator Servicing</span>
+            <span class="pill-tag" style="background:#ede9fe; color:#7c3aed;">Gas &amp; Motor</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Sofa%20Shampooing." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🛋️</span>
+            <span>Sofa &amp; Carpet Shampoo</span>
+            <span class="pill-tag" style="background:#d1fae5; color:#059669;">Sanitized</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Locksmith%20Services." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🔑</span>
+            <span>Locksmith &amp; Smart Locks</span>
+            <span class="pill-tag" style="background:#f1f5f9; color:#475569;">Urgent</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Balcony%20Netting." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🪟</span>
+            <span>Balcony Bird Netting</span>
+            <span class="pill-tag" style="background:#fef3c7; color:#d97706;">Custom Fit</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Microwave%20Fix." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">📻</span>
+            <span>Microwave &amp; Oven Repair</span>
+            <span class="pill-tag" style="background:#ffedd5; color:#ea580c;">Certified</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Switchboard%20Installation." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">💡</span>
+            <span>Modular Switch Setup</span>
+            <span class="pill-tag" style="background:#ccfbf1; color:#0d9488;">Safety First</span>
+          </a>
+          <!-- Duplicate set for seamless continuous infinite scroll -->
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Water%20Heater%20Installation." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🚿</span>
+            <span>Water Heater Installation</span>
+            <span class="pill-tag" style="background:#e0f2fe; color:#0284c7;">Geyser Pro</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Refrigerator%20Repair." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🧊</span>
+            <span>Refrigerator Servicing</span>
+            <span class="pill-tag" style="background:#ede9fe; color:#7c3aed;">Gas &amp; Motor</span>
+          </a>
+          <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Sofa%20Shampooing." class="service-pill" target="_blank" rel="noopener">
+            <span class="pill-emoji">🛋️</span>
+            <span>Sofa &amp; Carpet Shampoo</span>
+            <span class="pill-tag" style="background:#d1fae5; color:#059669;">Sanitized</span>
           </a>
         </div>
       </div>
     </section>
+
+    <!-- ==========================================================================
+         Service Catalog with Hand-Crafted Colorful Sketches & Cards
+         ========================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        
+        <div class="section-head">
+          <div class="section-tag">Ontology Catalog &bull; 57+ Verified Trades</div>
+          <h2 class="section-title">Popular On-Demand Services</h2>
+          <p class="section-sub">
+            Each category is serviced by locally certified, background-checked trade specialists. Choose your requirement or simply text us on WhatsApp.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="filter-tabs" id="catalogFilters">
+          <button class="filter-btn active" data-category="all">All Services (8)</button>
+          <button class="filter-btn" data-category="emergency">Emergency Repairs</button>
+          <button class="filter-btn" data-category="cleaning">Cleaning &amp; Hygiene</button>
+          <button class="filter-btn" data-category="appliances">Cooling &amp; Appliances</button>
+          <button class="filter-btn" data-category="home">Woodwork &amp; Walls</button>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid" id="servicesGrid">
+          
+          <!-- 1. Plumbing Card -->
+          <div class="card" data-cat="emergency">
+            <div class="card-top">
+              <div class="sketch-icon cat-blue">
+                <!-- Colorful Vector Sketch: Plumbing Wrench & Water Drop -->
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 8C14 8 20 6 24 10C28 14 26 20 26 20L38 32C40 34 40 38 38 40C36 42 32 42 30 40L18 28C18 28 12 30 8 26C4 22 6 16 6 16L12 18L16 14L14 8Z" fill="#bae6fd" stroke="#0284c7" stroke-width="2.5" stroke-linejoin="round"/>
+                  <circle cx="34" cy="36" r="2" fill="#0284c7"/>
+                  <path d="M38 12 C38 17 32 22 32 22 C32 22 26 17 26 12 C26 7 32 4 32 4 C32 4 38 7 38 12 Z" fill="#0284c7" fill-opacity="0.25" stroke="#0284c7" stroke-width="2"/>
+                </svg>
+              </div>
+              <span class="card-badge">Avg. 25 min arrival</span>
+            </div>
+            <h3 class="card-title">Plumbing &amp; Leakage</h3>
+            <p class="card-desc">
+              Immediate dispatch for pipe bursts, leaking fixtures, clogged drainage, shower valves, and water tank overflows.
+            </p>
+            <ul class="card-bullets">
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Drain unblocking &amp; pipe repair</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Faucet &amp; flush replacement</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 30-Day Workmanship Guarantee</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price-hint">Inspection from <strong>$29 upfront</strong></div>
+              <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20a%20Plumber%20urgently." class="card-cta" target="_blank" rel="noopener">Book on WhatsApp &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 2. Electrical Card -->
+          <div class="card" data-cat="emergency">
+            <div class="card-top">
+              <div class="sketch-icon cat-amber">
+                <!-- Colorful Vector Sketch: Lightning Bolt & Bulb -->
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26 4L10 26H24L22 44L38 22H24L26 4Z" fill="#fde68a" stroke="#d97706" stroke-width="2.5" stroke-linejoin="round"/>
+                  <circle cx="24" cy="24" r="18" stroke="#d97706" stroke-dasharray="3 3" stroke-width="1.5" stroke-opacity="0.4"/>
+                </svg>
+              </div>
+              <span class="card-badge">Certified Electricians</span>
+            </div>
+            <h3 class="card-title">Electrical &amp; Wiring</h3>
+            <p class="card-desc">
+              Safe handling for tripping MCBs, short-circuits, burnt sockets, light fixture installs, and inverter rewiring.
+            </p>
+            <ul class="card-bullets">
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Switchboard &amp; fuse diagnosis</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Fan, chandelier &amp; appliance wiring</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Safety-compliant insulated tools</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price-hint">Diagnosis from <strong>$35 upfront</strong></div>
+              <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20an%20Electrician." class="card-cta" target="_blank" rel="noopener">Book on WhatsApp &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 3. Air Conditioning Card -->
+          <div class="card" data-cat="appliances">
+            <div class="card-top">
+              <div class="sketch-icon cat-blue">
+                <!-- Colorful Vector Sketch: AC Unit & Snowflake -->
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="10" width="36" height="20" rx="4" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+                  <line x1="12" y1="22" x2="36" y2="22" stroke="#0284c7" stroke-width="2"/>
+                  <line x1="24" y1="28" x2="24" y2="42" stroke="#0284c7" stroke-width="2"/>
+                  <path d="M20 32 L24 28 L28 32 M20 38 L24 42 L28 38" stroke="#0284c7" stroke-width="2"/>
+                  <path d="M14 35 H34" stroke="#0284c7" stroke-width="2"/>
+                </svg>
+              </div>
+              <span class="card-badge">HVAC Certified</span>
+            </div>
+            <h3 class="card-title">AC Repair &amp; Gas Refill</h3>
+            <p class="card-desc">
+              Comprehensive jet-pump deep cleaning, compressor troubleshooting, refrigerant leak detection, and gas top-up.
+            </p>
+            <ul class="card-bullets">
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Foam jet pressure cleaning</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 100% genuine gas top-ups</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> PCB and thermostat repair</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price-hint">Tune-up from <strong>$49 upfront</strong></div>
+              <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20AC%20Servicing." class="card-cta" target="_blank" rel="noopener">Book on WhatsApp &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 4. Deep Cleaning Card -->
+          <div class="card" data-cat="cleaning">
+            <div class="card-top">
+              <div class="sketch-icon cat-emerald">
+                <!-- Colorful Vector Sketch: Spray Bottle & Sparkles -->
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 18H28L30 42H14L16 18Z" fill="#a7f3d0" stroke="#059669" stroke-width="2.5"/>
+                  <path d="M22 8V18 M18 12H32L34 16" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M36 22L38 20L40 22L38 24L36 22Z" fill="#10b981"/>
+                  <path d="M10 26L12 24L14 26L12 28L10 26Z" fill="#10b981"/>
+                </svg>
+              </div>
+              <span class="card-badge">Sanitized &bull; Eco Chemicals</span>
+            </div>
+            <h3 class="card-title">Deep Home Cleaning</h3>
+            <p class="card-desc">
+              Hospital-grade sanitization for full apartments, kitchens, tile scrubbing, move-in move-out resets, and balconies.
+            </p>
+            <ul class="card-bullets">
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Kitchen oil &amp; chimney degreasing</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Bathroom limescale descaling</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Mechanized single-disc floor buffing</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price-hint">Rooms from <strong>$39 upfront</strong></div>
+              <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Deep%20Cleaning." class="card-cta" target="_blank" rel="noopener">Book on WhatsApp &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 5. Carpentry Card -->
+          <div class="card" data-cat="home">
+            <div class="card-top">
+              <div class="sketch-icon cat-orange">
+                <!-- Colorful Vector Sketch: Hammer & Wood -->
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 10L24 20L18 26L8 16L14 10Z" fill="#ffedd5" stroke="#ea580c" stroke-width="2.5"/>
+                  <rect x="22" y="18" width="8" height="24" rx="2" transform="rotate(-45 22 18)" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5"/>
+                  <circle cx="11" cy="13" r="2" fill="#ea580c"/>
+                </svg>
+              </div>
+              <span class="card-badge">Skilled Joinery</span>
+            </div>
+            <h3 class="card-title">Carpentry &amp; Woodwork</h3>
+            <p class="card-desc">
+              Custom flat-pack furniture assembly, door alignment, squeaking hinges, modular cabinets, and lock replacement.
+            </p>
+            <ul class="card-bullets">
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Wardrobe &amp; bed assembly</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Door latch, stopper &amp; deadbolts</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Wooden surface polish &amp; fix</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price-hint">Hourly from <strong>$30 upfront</strong></div>
+              <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20a%20Carpenter." class="card-cta" target="_blank" rel="noopener">Book on WhatsApp &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 6. Appliance Repair Card -->
+          <div class="card" data-cat="appliances">
+            <div class="card-top">
+              <div class="sketch-icon cat-purple">
+                <!-- Colorful Vector Sketch: Washing Machine & Circuit -->
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="8" width="28" height="34" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+                  <circle cx="24" cy="27" r="9" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5"/>
+                  <circle cx="24" cy="27" r="4" fill="#7c3aed" fill-opacity="0.3"/>
+                  <circle cx="16" cy="14" r="2" fill="#7c3aed"/>
+                  <line x1="22" y1="14" x2="32" y2="14" stroke="#7c3aed" stroke-width="2"/>
+                </svg>
+              </div>
+              <span class="card-badge">Original OEM Parts</span>
+            </div>
+            <h3 class="card-title">Appliance Repairs</h3>
+            <p class="card-desc">
+              Expert technicians for front/top load washing machines, refrigerators, microwaves, water purifiers, and chimneys.
+            </p>
+            <ul class="card-bullets">
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Drain pump &amp; motor replacement</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Fridge cooling coil repair</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 90-Day Component Warranty</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price-hint">Estimate from <strong>$35 upfront</strong></div>
+              <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Appliance%20Repair." class="card-cta" target="_blank" rel="noopener">Book on WhatsApp &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 7. Wall Painting Card -->
+          <div class="card" data-cat="home">
+            <div class="card-top">
+              <div class="sketch-icon cat-rose">
+                <!-- Colorful Vector Sketch: Paint Roller -->
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="8" y="10" width="26" height="12" rx="3" fill="#ffe4e6" stroke="#e11d48" stroke-width="2.5"/>
+                  <path d="M34 16H38V28H24V38" stroke="#e11d48" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M12 22C12 26 16 28 16 32" stroke="#e11d48" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="card-badge">Dust-Free Sanding</span>
+            </div>
+            <h3 class="card-title">Painting &amp; Touch-Ups</h3>
+            <p class="card-desc">
+              Color consultations, wall crack filling, waterproof priming, single room accent coats, and exterior weatherproof coats.
+            </p>
+            <ul class="card-bullets">
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Premium low-VOC paints</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Furniture masking &amp; floor cover</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Spotless clean-up after paint</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price-hint">Rooms from <strong>$79 upfront</strong></div>
+              <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Wall%20Painting." class="card-cta" target="_blank" rel="noopener">Book on WhatsApp &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 8. Pest Control Card -->
+          <div class="card" data-cat="cleaning">
+            <div class="card-top">
+              <div class="sketch-icon cat-lime">
+                <!-- Colorful Vector Sketch: Shield & Herbal Leaf -->
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 6L10 12V24C10 33 16 40 24 44C32 40 38 33 38 24V12L24 6Z" fill="#ecfccb" stroke="#65a30d" stroke-width="2.5"/>
+                  <path d="M24 16C20 20 20 28 24 32C28 28 28 20 24 16Z" fill="#84cc16"/>
+                  <line x1="24" y1="18" x2="24" y2="30" stroke="#ffffff" stroke-width="2"/>
+                </svg>
+              </div>
+              <span class="card-badge">Odorless &bull; Child Safe</span>
+            </div>
+            <h3 class="card-title">Pest Control &amp; Hygiene</h3>
+            <p class="card-desc">
+              Hassle-free treatments for cockroaches, termites, bed bugs, ants, and mosquito fogging with certified herbal gels.
+            </p>
+            <ul class="card-bullets">
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> No kitchen emptying required</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Odorless &amp; pet friendly</li>
+              <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 90-Day Free Respray Guarantee</li>
+            </ul>
+            <div class="card-footer">
+              <div class="price-hint">Homes from <strong>$45 upfront</strong></div>
+              <a href="https://wa.me/?text=Hi%20OWLF,%20I%20need%20Pest%20Control." class="card-cta" target="_blank" rel="noopener">Book on WhatsApp &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         How It Works (Interactive 3-Step Journey)
+         ========================================================================== -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        
+        <div class="section-head">
+          <div class="section-tag">Frictionless Experience</div>
+          <h2 class="section-title">How OWLF Works in 3 Steps</h2>
+          <p class="section-sub">
+            Say goodbye to endless app downloads, OTP verification loops, and spam notifications.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          
+          <div class="step-box">
+            <div class="step-number">1</div>
+            <h3 class="step-name">Text Your Requirement</h3>
+            <p class="step-text">
+              Open WhatsApp, tell us what needs fixing or cleaning, and drop your approximate location. You can send photos or voice notes in any language.
+            </p>
+          </div>
+
+          <div class="step-box">
+            <div class="step-number">2</div>
+            <h3 class="step-name">Instant Local Match</h3>
+            <p class="step-text">
+              Our automated matching engine pings certified on-duty specialists within 5km. Within 3 minutes, you receive transparent offers with real ratings.
+            </p>
+          </div>
+
+          <div class="step-box">
+            <div class="step-number">3</div>
+            <h3 class="step-name">Job Done &bull; Pay After</h3>
+            <p class="step-text">
+              The verified specialist arrives at your chosen time with full equipment. You inspect the work, pay transparently, and enjoy warranty coverage.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Why WhatsApp / OWLF vs Traditional Apps Comparison
+         ========================================================================== -->
+    <section class="section" id="why-owlf">
+      <div class="container">
+        
+        <div class="section-head">
+          <div class="section-tag">The OWLF Advantage</div>
+          <h2 class="section-title">Why Customers Prefer In-Chat Booking</h2>
+          <p class="section-sub">
+            Built for modern urban homeowners who value simplicity, speed, and real human accountability.
+          </p>
+        </div>
+
+        <div class="comparison-card">
+          
+          <!-- Bad: Traditional Marketplace Apps -->
+          <div class="comp-col-bad">
+            <div class="comp-head" style="color: #991b1b;">
+              <span>❌</span>
+              <span>Traditional Service Apps</span>
+            </div>
+            <ul class="comp-list">
+              <li><span>⚠️</span> Requires 150MB heavy app downloads &amp; logins</li>
+              <li><span>⚠️</span> Clunky forms, OTP delays, and invasive tracking</li>
+              <li><span>⚠️</span> Inflated middlemen commissions added to total bill</li>
+              <li><span>⚠️</span> Automated bots with no human escalation on disputes</li>
+              <li><span>⚠️</span> Relentless marketing push notification spam</li>
+            </ul>
+          </div>
+
+          <!-- Good: OWLF WhatsApp Marketplace -->
+          <div class="comp-col-good">
+            <div class="comp-head" style="color: #065f46;">
+              <span>✅</span>
+              <span>The OWLF Conversational Standard</span>
+            </div>
+            <ul class="comp-list">
+              <li><span>✨</span> <strong>Zero downloads</strong> &mdash; Works instantly in your existing WhatsApp</li>
+              <li><span>✨</span> <strong>Voice &amp; Photo friendly</strong> &mdash; Just snap a picture of the leak</li>
+              <li><span>✨</span> <strong>Direct pricing</strong> &mdash; Honest quotes without inflated commissions</li>
+              <li><span>✨</span> <strong>Live Dispatch Support</strong> &mdash; Real duty officers monitor every request</li>
+              <li><span>✨</span> <strong>Complete privacy</strong> &mdash; Exact address only revealed upon booking</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Provider / Partner Network Banner
+         ========================================================================== -->
+    <section class="section" id="providers">
+      <div class="container">
+        
+        <div class="partner-banner">
+          <div class="partner-content">
+            <div style="display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.15); border-radius: 999px; font-size: 0.8rem; font-weight: 700; margin-bottom: 12px; color: #a7f3d0;">
+              FOR TECHNICIANS &bull; CONTRACTORS &bull; TRADESPEOPLE
+            </div>
+            <h2>Are You a Verified Local Service Pro?</h2>
+            <p>
+              Join the OWLF Partner Network. Receive verified customer service requests directly on WhatsApp. Keep 100% control of your schedule with zero listing fees.
+            </p>
+          </div>
+          <a href="https://wa.me/?text=Hi%20OWLF!%20I%20am%20a%20local%20service%20provider%20interested%20in%20joining%20as%20a%20verified%20partner." class="btn btn-whatsapp btn-lg" style="white-space: nowrap;" target="_blank" rel="noopener">
+            <span>Apply on WhatsApp &rarr;</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ Section
+         ========================================================================== -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        
+        <div class="section-head">
+          <div class="section-tag">Frequently Asked Questions</div>
+          <h2 class="section-title">Common Questions About OWLF</h2>
+          <p class="section-sub">Everything you need to know about booking services and how our platform works.</p>
+        </div>
+
+        <div class="faq-wrap">
+          
+          <div class="faq-item open">
+            <div class="faq-q">
+              <span>Do I need to download an application or sign up?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-a">
+              No! That is the core philosophy of OWLF. You simply open WhatsApp and message our official verified number. We handle discovery, provider matching, quotations, and scheduling directly in the chat thread.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span>How are service providers verified?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-a">
+              Every provider on OWLF undergoes identity verification (government ID &amp; background checks), trade certification validation, and customer rating audits before receiving requests.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span>How does pricing and payment work?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-a">
+              Before you confirm any booking, you receive a transparent estimate covering inspection and standard labor. You only pay the professional after the work is completed and verified to your satisfaction.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span>Is my home address shared publicly?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-a">
+              Never. When our system matches nearby providers, they only see your approximate neighborhood (e.g. within 2-3 km). Your complete door address is only unlocked for the single specialist you personally choose to book.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span>What if I need to reschedule or cancel?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-a">
+              Simply text "Reschedule" or "Cancel" in your WhatsApp chat thread. Our automated assistant will immediately assist you or connect you with a duty officer.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-  <!-- Footer -->
+  <!-- ==========================================================================
+       Sticky Floating WhatsApp Widget (Bottom Right)
+       ========================================================================== -->
+  <a href="https://wa.me/?text=Hi%20OWLF!%20I%20need%20assistance%20with%20a%20local%20service." class="floating-wa-btn" target="_blank" rel="noopener" aria-label="Quick WhatsApp Chat">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2M12.05 20.15C10.57 20.15 9.12 19.75 7.85 19L7.55 18.82L4.43 19.64L5.26 16.6L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.69 12.05 3.69C14.25 3.69 16.32 4.55 17.88 6.11C19.44 7.67 20.3 9.74 20.3 11.94C20.29 16.48 16.6 20.15 12.05 20.15Z"/></svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-inner">
-        <div class="brand">
-          <div class="brand-icon">O</div>
-          <span>OWLF</span>
+      <div class="footer-main">
+        <div>
+          <a href="/" class="brand">
+            <div class="brand-icon">
+              <svg viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="45" fill="#ffffff" fill-opacity="0.2"/>
+                <circle cx="38" cy="46" r="10" fill="#ffffff"/>
+                <circle cx="62" cy="46" r="10" fill="#ffffff"/>
+                <polygon points="50,54 44,63 56,63" fill="#f59e0b"/>
+              </svg>
+            </div>
+            <span>OWLF</span>
+          </a>
+          <p class="footer-brand-desc">
+            The on-demand conversational marketplace for certified local services. Instant WhatsApp matching, verified professionals, and upfront pricing.
+          </p>
         </div>
-        <p style="color: var(--text-muted); font-size: 0.95rem;">
-          On-demand local services platform powered by conversational commerce.
-        </p>
+
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="#services">Services</a>
+            <a href="#simulator">Live Simulator</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#why-owlf">Why WhatsApp</a>
+          </div>
+          <div class="footer-col">
+            <h4>Trades</h4>
+            <a href="#services">Plumbing</a>
+            <a href="#services">Electrical</a>
+            <a href="#services">AC &amp; HVAC</a>
+            <a href="#services">Deep Cleaning</a>
+          </div>
+          <div class="footer-col">
+            <h4>Community</h4>
+            <a href="#providers">Become a Partner</a>
+            <a href="https://wa.me/?text=Hi%20OWLF%20Support" target="_blank" rel="noopener">WhatsApp Support</a>
+            <a href="mailto:hello@owlf.one">hello@owlf.one</a>
+          </div>
+        </div>
       </div>
+
       <div class="footer-copy">
-        &copy; 2026 OWLF. All rights reserved. &bull; owlf.one
+        <div>&copy; 2026 OWLF Technologies. All rights reserved. &bull; owlf.one</div>
+        <div style="display:flex; gap: 16px;">
+          <span>Privacy Policy</span>
+          <span>Terms of Service</span>
+          <span>Security</span>
+        </div>
       </div>
     </div>
   </footer>
+
+  <!-- ==========================================================================
+       Interactive Client-Side Logic (Simulator, Filter, Accordion)
+       ========================================================================== -->
+  <script>
+    // 1. Interactive WhatsApp Simulator Data
+    const scenarios = {
+      plumbing: {
+        userMsg: "Hey OWLF, my kitchen sink pipe is leaking water all over the floor. Need urgent help! 💧",
+        botIntro: "Hi there! 🦉 We found <strong>2 verified plumbers</strong> 1.4 km from your address.",
+        proName: "Rajesh Kumar • Master Plumber",
+        rating: "★ 4.9 (140+ jobs)",
+        eta: "⏱️ Arrives in 25 mins • 🛡️ ID & Police Verified",
+        price: "$35 - $50 (Fix included)",
+        ctaLink: "https://wa.me/?text=Hi%20OWLF!%20Please%20confirm%20the%20booking%20for%20Rajesh%20Kumar%20(Plumber)."
+      },
+      ac: {
+        userMsg: "Hi! My bedroom AC isn't blowing cold air, just room temp air. Can someone inspect it today? ❄️",
+        botIntro: "Hello! 🦉 Matched with <strong>top-rated HVAC technician</strong> near you:",
+        proName: "Vikram Mehta • Certified HVAC Specialist",
+        rating: "★ 4.95 (210+ jobs)",
+        eta: "⏱️ Available today at 3:30 PM • 🛡️ Licensed Technician",
+        price: "$45 diagnostic (Includes gas pressure check)",
+        ctaLink: "https://wa.me/?text=Hi%20OWLF!%20Please%20book%20Vikram%20Mehta%20for%20AC%20Inspection."
+      },
+      cleaning: {
+        userMsg: "Hello OWLF, we are moving into a 2-bedroom flat tomorrow and need full deep sanitization! 🧹",
+        botIntro: "Congrats on your new home! 🦉 We have an experienced <strong>2-person cleaning crew</strong> ready:",
+        proName: "SparkleClean Team • Superhost Certified",
+        rating: "★ 4.88 (95+ residential moves)",
+        eta: "⏱️ Tomorrow 9:00 AM • 🧽 Full Equipment Included",
+        price: "$120 flat package (Kitchen, Baths, Balconies)",
+        ctaLink: "https://wa.me/?text=Hi%20OWLF!%20Please%20schedule%20SparkleClean%20for%20our%20move-in."
+      },
+      electric: {
+        userMsg: "Emergency! The main breaker tripped and there is a burning plastic smell near the board! ⚡",
+        botIntro: "🚨 <em>Safety Priority Alert</em>: Please switch off the main inverter. Dispatching immediate electrician:",
+        proName: "Arun Nair • High-Voltage Electrician",
+        rating: "★ 4.92 (300+ safety calls)",
+        eta: "⏱️ ETA: 18 mins • 🛡️ Emergency Response Certified",
+        price: "$35 emergency fee + parts at actuals",
+        ctaLink: "https://wa.me/?text=Hi%20OWLF!%20Confirming%20urgent%20dispatch%20for%20Arun%20Nair%20(Electrical)."
+      }
+    };
+
+    // Scenario Switcher
+    const scenarioBtns = document.querySelectorAll('.scenario-btn');
+    const userMsgText = document.getElementById('userMsgText');
+    const botIntroText = document.getElementById('botIntroText');
+    const proName = document.getElementById('proName');
+    const proEta = document.getElementById('proEta');
+    const proPrice = document.getElementById('proPrice');
+    const botCtaBtn = document.getElementById('botCtaBtn');
+
+    scenarioBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        scenarioBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const s = scenarios[btn.dataset.scenario];
+        if (s) {
+          userMsgText.textContent = s.userMsg;
+          botIntroText.innerHTML = s.botIntro;
+          proName.textContent = s.proName;
+          proEta.textContent = s.eta;
+          proPrice.textContent = s.price;
+          botCtaBtn.href = s.ctaLink;
+        }
+      });
+    });
+
+    // 2. Category Filter Tabs
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.services-grid .card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.category;
+
+        cards.forEach(card => {
+          if (cat === 'all' || card.dataset.cat === cat) {
+            card.style.display = 'flex';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 3. FAQ Accordion Toggle
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const q = item.querySelector('.faq-q');
+      q.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        faqItems.forEach(i => i.classList.remove('open'));
+        if (!isOpen) {
+          item.classList.add('open');
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
