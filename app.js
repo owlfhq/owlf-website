@@ -9,7 +9,7 @@
     button.addEventListener("click", () => {
       const to = button.dataset.emailTo || "hello@owlf.one";
       const subject = button.dataset.emailSubject || "owlf enquiry";
-      window.location.href = "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject);
+      window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subject);
     });
   });
 
