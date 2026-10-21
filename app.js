@@ -38,7 +38,6 @@
 
   const sampleMessage = document.querySelector("#sample-message");
   const confirmationMessage = document.querySelector("#confirmation-message");
-  const serviceBadge = document.querySelector("#sample-service");
   const conversationLink = document.querySelector(".conversation-link");
   const scenarioButtons = Array.from(document.querySelectorAll(".scenario"));
   const animatedChatItems = Array.from(document.querySelectorAll(".chat-line, .chat-actions"));
@@ -58,15 +57,13 @@
 
   function selectExample(kind) {
     const example = examples[kind];
-    if (!example || !sampleMessage || !confirmationMessage || !serviceBadge || !conversationLink) return;
+    if (!example || !sampleMessage || !confirmationMessage || !conversationLink) return;
 
     // This is the tested new-customer path: Hi → welcome → typed job → Yes/Change → location.
     sampleMessage.textContent = example.message;
     confirmationMessage.innerHTML = whatsappHtml(
       example.emoji + " *" + example.service + "*\nIs that right?"
     );
-    serviceBadge.textContent = "NEW CUSTOMER";
-
     // The main link intentionally opens the real greeting draft; it does not pretend to send it.
     conversationLink.dataset.message = "Hi";
     conversationLink.href = whatsappDraftUrl("Hi");
