@@ -4,6 +4,15 @@
   const whatsappDraftUrl = (message) =>
     "https://wa.me/?text=" + encodeURIComponent(message);
 
+  // Use a button rather than an anchor so the browser does not show a mailto URL preview on hover.
+  document.querySelectorAll("[data-email-draft]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const to = button.dataset.emailTo || "hello@owlf.one";
+      const subject = button.dataset.emailSubject || "owlf enquiry";
+      window.location.href = "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject);
+    });
+  });
+
   document.querySelectorAll("a[data-wa]").forEach((link) => {
     const message = link.dataset.message || "Hi";
     link.href = whatsappDraftUrl(message);
