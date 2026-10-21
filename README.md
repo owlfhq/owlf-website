@@ -18,7 +18,7 @@ Open `index.html` in a browser for a local preview. The page has no package inst
 
 The eight service groups and subcategories shown on the page follow the customer-facing `BROWSE_CATALOG` in the separate WhatsApp webhook project. Wording has been localized for Canada while preserving the listed service intent. Availability is described as area-dependent; the website makes no provider, price, review, response-time or guarantee claims.
 
-The page no longer includes a simulated chat. Service-card links open a prepared WhatsApp message; the visitor must choose a recipient before sending.
+The phone mock-up contains a clearly labelled illustrative WhatsApp conversation to explain the request flow; it is an example, not a live chat. Service-card links open a prepared WhatsApp message; the visitor must choose a recipient before sending.
 
 ## WhatsApp links
 
