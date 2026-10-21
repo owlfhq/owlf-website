@@ -24,5 +24,11 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/privacy",
+      "destination": "https://whatsapp-local-services-webhook.vercel.app/privacy"
+    }
   ]
 }
