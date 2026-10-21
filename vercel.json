@@ -29,6 +29,10 @@
     {
       "source": "/privacy",
       "destination": "https://whatsapp-local-services-webhook.vercel.app/privacy"
+    },
+    {
+      "source": "/pro-terms",
+      "destination": "https://whatsapp-local-services-webhook.vercel.app/pro-terms"
     }
   ]
 }
