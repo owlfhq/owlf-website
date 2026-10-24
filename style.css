@@ -33,7 +33,7 @@ button { font: inherit; }
 .nav { display: flex; height: 100%; align-items: center; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
 .brand-mark { position: relative; display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid rgb(255 250 240 / 16%); border-radius: 50%; background: var(--green); color: var(--paper); box-shadow: inset 0 0 0 1px rgb(255 250 240 / 7%); transition: transform .35s var(--ease), box-shadow .35s ease; }
-.brand-mark svg { width: 29px; height: 29px; }
+.brand-mark img { width: 29px; height: 29px; filter: brightness(0) invert(1); }
 .brand:hover .brand-mark, .brand:focus-visible .brand-mark { box-shadow: 0 5px 12px rgb(31 48 42 / 17%), inset 0 0 0 1px rgb(255 250 240 / 9%); transform: translateY(-2px) rotate(-4deg); }
 .brand-name { font-size: 25px; font-weight: 700; letter-spacing: -.035em; }
 .brand-name span { color: var(--rust); }
@@ -184,7 +184,7 @@ h1 em, h2 em { color: var(--rust); font-weight: 400; }
 .wa-header { min-height: 54px; display: flex; align-items: center; gap: 8px; padding: 7px 10px; background: #244c3f; color: #fbf8ed; }
 .wa-back { color: #e1ebdc; font-size: 24px; line-height: 1; }
 .wa-avatar { display: grid; width: 31px; height: 31px; flex: 0 0 31px; place-items: center; border-radius: 50%; background: #f3ead7; color: var(--green); }
-.wa-avatar svg { width: 24px; height: 24px; }
+.wa-avatar img { width: 24px; height: 24px; }
 .wa-contact { display: flex; flex-direction: column; gap: 2px; line-height: 1.15; }
 .wa-contact strong { font-size: 12px; font-weight: 700; }
 .wa-contact small { color: #d1dfd1; font-size: 8px; }
@@ -283,7 +283,7 @@ h1 em, h2 em { color: var(--rust); font-weight: 400; }
   .wrap { width: min(100% - 36px, 600px); }
   .site-header { height: 70px; }
   .brand-mark { width: 37px; height: 37px; }
-  .brand-mark svg { width: 26px; height: 26px; }
+  .brand-mark img { width: 26px; height: 26px; }
   .brand-name { font-size: 23px; }
   .nav { justify-content: space-between; }
   .nav-cta { min-height: 42px; gap: 8px; padding-inline: 12px; font-size: 10px; }
