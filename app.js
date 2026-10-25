@@ -132,6 +132,35 @@
     });
   }
 
+  // Links within the page scroll to their section without putting "#services" (or "#top") in the
+  // address bar, so the address stays https://owlf.one wherever you are on the page.
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const cleanAddress = () => {
+    if (window.location.hash) history.replaceState(null, "", window.location.pathname + window.location.search);
+  };
+  document.addEventListener("click", (event) => {
+    const link = event.target instanceof Element ? event.target.closest('a[href^="#"]') : null;
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const id = decodeURIComponent(link.getAttribute("href").slice(1));
+    const target = id ? document.getElementById(id) : null;
+    if (!target) return;
+    event.preventDefault();
+    if (id === "top") window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    else target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+    // Keyboard and screen-reader users land where they asked to go (the skip link, for one).
+    if (id === "main") {
+      if (!target.hasAttribute("tabindex")) target.setAttribute("tabindex", "-1");
+      target.focus({ preventScroll: true });
+    }
+    cleanAddress();
+  });
+  // An old link with "#questions" still opens at that section, then the address is tidied.
+  if (window.location.hash) {
+    const landed = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+    cleanAddress();
+    if (landed) requestAnimationFrame(() => landed.scrollIntoView({ block: "start" }));
+  }
+
   const year = document.querySelector("#year");
   if (year) year.textContent = String(new Date().getFullYear());
 
