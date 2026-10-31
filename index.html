@@ -26,6 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <script src="./app.js" defer></script>
+  <script src="./rating.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -291,6 +292,22 @@
         <details><summary>What happens when I message owlf?<span aria-hidden="true">+</span></summary><p>You’ll be asked to describe the job and share your area. Follow the prompts in WhatsApp to continue your request.</p></details>
         <details><summary>What if my service isn’t listed?<span aria-hidden="true">+</span></summary><p>Send us a message describing the job and share your area. We’ll help you work out the next step.</p></details>
       </div>
+    </div>
+  </section>
+
+  <section class="rating-section" id="rating" aria-labelledby="rating-title" hidden>
+    <div class="wrap rating-grid">
+      <div class="rating-intro reveal">
+        <p class="eyebrow"><span class="eyebrow-rule"></span>What customers say</p>
+        <h2 id="rating-title">Rated by the people<br><em>we’ve helped.</em></h2>
+        <div class="rating-score">
+          <span class="rating-number" id="rating-number"></span>
+          <span class="rating-stars" id="rating-stars" aria-hidden="true">★★★★★</span>
+          <span class="rating-count" id="rating-count"></span>
+        </div>
+        <p class="rating-note">The average of the ratings customers give owlf after a booked job. We choose which comments to show, only with the customer’s permission, and we never edit their words.</p>
+      </div>
+      <ul class="rating-quotes" id="rating-quotes" aria-label="Comments from customers"></ul>
     </div>
   </section>
 
