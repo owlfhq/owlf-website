@@ -397,3 +397,28 @@ h1 em, h2 em { color: var(--rust); font-weight: 400; }
   .reveal { opacity: 1; transform: none; }
   .steps.visible li { animation: none !important; opacity: 1; transform: none; }
 }
+
+/* Owlf rating: shown only once there are enough ratings (rating.js) */
+.rating-section { padding: 99px 0 106px; background: var(--paper); border-top: 1px solid var(--line); }
+.rating-section[hidden] { display: none; }
+.rating-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(55px,10vw,150px); align-items: start; }
+.rating-intro h2 { margin: 0; font-family: var(--serif); font-size: clamp(44px,5vw,64px); font-weight: 500; letter-spacing: -.025em; line-height: 1.07; text-wrap: balance; }
+.rating-intro .eyebrow { margin-bottom: 20px; }
+.rating-score { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin: 28px 0 14px; }
+.rating-number { font-family: var(--serif); font-size: 56px; font-weight: 500; line-height: 1; letter-spacing: -.02em; }
+.rating-stars { --fill: 100%; font-size: 24px; letter-spacing: 3px; line-height: 1; background: linear-gradient(90deg, var(--ochre) var(--fill), #d9d8ca var(--fill)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.rating-count { flex-basis: 100%; color: var(--muted); font-size: 12px; font-weight: 600; }
+.rating-note { max-width: 330px; margin: 0; color: #69756c; font-size: 11px; line-height: 1.7; }
+.rating-quotes { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.rating-quotes li { padding: 20px 22px 18px; border: 1px solid #dcdccf; background: #fffefa; }
+.rating-quotes .rating-stars { font-size: 15px; letter-spacing: 2px; }
+.rating-quotes blockquote { margin: 11px 0 12px; font-family: var(--serif); font-size: 18px; line-height: 1.5; overflow-wrap: anywhere; }
+.rating-quotes cite { color: #758078; font-size: 11px; font-style: normal; font-weight: 700; letter-spacing: .04em; }
+@media (max-width: 760px) {
+  .rating-section { padding: 74px 0 80px; }
+  .rating-grid { grid-template-columns: 1fr; gap: 28px; }
+  .rating-intro h2 { font-size: 49px; }
+  .rating-number { font-size: 48px; }
+  .rating-quotes li { padding: 16px 16px 14px; }
+  .rating-quotes blockquote { font-size: 16px; }
+}
