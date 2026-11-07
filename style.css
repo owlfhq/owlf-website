@@ -91,7 +91,7 @@ h1 em, h2 em { color: var(--rust); font-weight: 400; }
 .bottom-path { width: 39px; height: 1px; background: #c9cbbb; }
 .bottom-path::after { display: block; width: 5px; height: 5px; margin: -2px 0 0 auto; border-top: 1px solid #9da996; border-right: 1px solid #9da996; content: ""; transform: rotate(45deg); }
 
-.service-ribbon { overflow: hidden; padding: 13px 0 15px; border-bottom: 1px solid var(--line); background: var(--paper-deep); }
+.service-ribbon { overflow: hidden; padding: 15px 0; border-bottom: 1px solid var(--line); background: var(--paper-deep); }
 .ribbon-label { display: flex; justify-content: center; align-items: center; gap: 11px; padding-bottom: 8px; color: #7d8378; font-size: 8px; font-weight: 700; letter-spacing: .19em; }
 .ribbon-label i { width: 4px; height: 4px; border-radius: 50%; background: var(--rust); }
 .ticker { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
@@ -176,15 +176,15 @@ h1 em, h2 em { color: var(--rust); font-weight: 400; }
 /* WhatsApp flow preview, based on the service's welcome/list/intake messages */
 .conversation-card { position: relative; width: min(100%, 500px); min-width: 0; margin: 0 auto; padding: 18px 20px 15px; border: 1px solid #d9ddce; border-radius: 4px; background: #f4f0e6; color: var(--ink); box-shadow: 9px 12px 0 rgb(16 41 32 / 18%); transform: rotate(.25deg); }
 .phone { width: min(100%, 355px); margin: auto; padding: 7px; border: 2px solid #26342f; border-radius: 29px; background: #26342f; box-shadow: 0 8px 16px rgb(22 41 33 / 15%); transform-origin: 50% 50%; transition: transform .36s var(--ease), box-shadow .36s ease; }
-.conversation-card:hover .phone { box-shadow: 0 12px 22px rgb(22 41 33 / 21%); transform: rotate(-1deg); }
+.conversation-card:hover .phone { box-shadow: 0 14px 24px rgb(22 41 33 / 22%); transform: translateY(-4px); }
 .phone-hardware { height: 14px; display: flex; align-items: center; justify-content: center; gap: 6px; }
 .phone-hardware span { width: 38px; height: 4px; border-radius: 6px; background: #101a16; }
 .phone-hardware i { width: 4px; height: 4px; border-radius: 50%; background: #101a16; }
-.phone-screen { overflow: hidden; border-radius: 21px; background: #ece6da; }
+.phone-screen { overflow: hidden; border-radius: 21px; background: linear-gradient(#244c3f 0 48px, #ece6da 48px); isolation: isolate; }
 .wa-header { min-height: 54px; display: flex; align-items: center; gap: 8px; padding: 7px 10px; background: #244c3f; color: #fbf8ed; }
 .wa-back { color: #e1ebdc; font-size: 24px; line-height: 1; }
-.wa-avatar { display: grid; width: 31px; height: 31px; flex: 0 0 31px; place-items: center; border-radius: 50%; background: #f3ead7; color: var(--green); }
-.wa-avatar img { width: 24px; height: 24px; }
+.wa-avatar { display: block; width: 31px; height: 31px; flex: 0 0 31px; overflow: hidden; border-radius: 50%; background: #244c3f; box-shadow: 0 0 0 1.5px rgb(243 234 215 / 85%); }
+.wa-avatar img { display: block; width: 100%; height: 100%; border-radius: 50%; }
 .wa-contact { display: flex; flex-direction: column; gap: 2px; line-height: 1.15; }
 .wa-contact strong { font-size: 12px; font-weight: 700; }
 .wa-contact small { color: #d1dfd1; font-size: 8px; }

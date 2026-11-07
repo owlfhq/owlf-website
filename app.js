@@ -1,9 +1,8 @@
 (() => {
   "use strict";
 
-  // owlf's WhatsApp number, from the service: only once the official number is live (until then,
-  // the buttons open WhatsApp with the message ready and no number, as before).
-  let whatsappNumber = "";
+  // owlf's official WhatsApp number. The app can change it (api/public/contact) without a site update.
+  let whatsappNumber = "12496800033";
   const whatsappDraftUrl = (message) =>
     "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
 

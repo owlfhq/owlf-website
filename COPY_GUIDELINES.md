@@ -26,7 +26,7 @@ For each text element, assign one decision:
 
 - Do not promise provider availability, a successful match, response time, service coverage, fixed pricing, reviews, or guaranteed completion.
 - Avoid placing uncertainty in headlines and step titles. Put necessary limitations in a concise FAQ answer.
-- The current website links create a WhatsApp draft without a recipient number. The visitor chooses a recipient before sending. Never claim the link opens a direct conversation with owlf until a destination number is configured.
+- Every WhatsApp link opens a chat with owlf's official number (+1 249-680-0033) with a short first message ready to send.
 - Do not present demo content or simulated conversations as live activity. Prefer removing a fake chat rather than adding long disclaimers around it.
 - Do not expose internal terms such as “current WhatsApp flow,” “customer browse menu,” “category acknowledgement,” or implementation notes in public copy.
 
@@ -36,7 +36,7 @@ For each text element, assign one decision:
 - Service catalogue: help visitors find a category and understand common jobs.
 - Steps: explain the customer action in order, without repeating the hero.
 - General explanatory section: answer a real customer hesitation; otherwise remove it.
-- FAQ: keep necessary qualifications and practical details, including WhatsApp recipient selection and variable pricing.
+- FAQ: keep necessary qualifications and practical details, such as variable pricing.
 - CTA: state the action, not the underlying implementation.
 - Remove repeated claims from multiple sections. If a sentence does not help a visitor choose, act, or understand a necessary limitation, remove it.
 
