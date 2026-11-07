@@ -1,24 +1,39 @@
 (() => {
   "use strict";
 
+  // owlf's WhatsApp number, from the service: only once the official number is live (until then,
+  // the buttons open WhatsApp with the message ready and no number, as before).
+  let whatsappNumber = "";
   const whatsappDraftUrl = (message) =>
-    "https://wa.me/?text=" + encodeURIComponent(message);
+    "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
 
   // Use a button rather than an anchor so the browser does not show a mailto URL preview on hover.
   document.querySelectorAll("[data-email-draft]").forEach((button) => {
     button.addEventListener("click", () => {
-      const to = button.dataset.emailTo || "hello@owlf.one";
+      const to = button.dataset.emailTo || "hi@owlf.one";
       const subject = button.dataset.emailSubject || "owlf enquiry";
       window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subject);
     });
   });
 
-  document.querySelectorAll("a[data-wa]").forEach((link) => {
-    const message = link.dataset.message || "Hi";
-    link.href = whatsappDraftUrl(message);
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-  });
+  const setWhatsAppLinks = () =>
+    document.querySelectorAll("a[data-wa]").forEach((link) => {
+      const message = link.dataset.message || "Hi";
+      link.href = whatsappDraftUrl(message);
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    });
+  setWhatsAppLinks();
+  fetch("https://app.owlf.one/api/public/contact", { cache: "no-store" })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((d) => {
+      const n = d && typeof d.whatsapp === "string" ? d.whatsapp.replace(/\D/g, "") : "";
+      if (n.length >= 10) {
+        whatsappNumber = n;
+        setWhatsAppLinks();
+      }
+    })
+    .catch(() => {});
 
   // The base path is the tested fresh-customer flow: "Hi" -> welcome list ->
   // selected service -> subcategory list -> selected subcategory -> description -> area.
