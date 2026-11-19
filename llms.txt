@@ -1,0 +1,31 @@
+# owlf
+
+> owlf connects people who need a local home service with independent local pros, on WhatsApp. A customer describes the job and, where pros are available, up to three send offers. The customer chooses one and pays the pro directly. owlf is free for customers; pros pay a fee only on completed jobs.
+
+Serving: Peterborough, Ontario and nearby towns. Availability depends on the area and the service. The current list of towns is kept up to date at https://app.owlf.one/llms.txt
+
+## Services
+
+- Plumbing
+- Electrical
+- AC and heating
+- Major appliances
+- Home maintenance
+- Moving and hauling
+- Cleaning services
+- Lawn and yard care
+
+## Start a request
+
+- [Message owlf on WhatsApp](https://wa.me/12496800033?text=Hi)
+- Email: hi@owlf.one
+
+## Pages
+
+- [Home: services, how it works and common questions](https://owlf.one/)
+- [How it works for pros](https://app.owlf.one/pro-guide)
+- [Join as a pro](https://app.owlf.one/join)
+- [Contact](https://app.owlf.one/contact)
+- [Customer terms](https://owlf.one/terms)
+- [Pro terms](https://owlf.one/pro-terms)
+- [Privacy policy](https://owlf.one/privacy)

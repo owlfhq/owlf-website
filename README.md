@@ -7,6 +7,8 @@ Static, responsive landing page for the OWLF local home-services marketplace.
 - `index.html` — page structure, service catalogue, hero illustration and WhatsApp conversation sample.
 - `style.css` — layout, responsive styles and motion.
 - `app.js` — WhatsApp draft links, mobile navigation and reveal animations.
+- `robots.txt`, `sitemap.xml` and `llms.txt` — what search engines and AI assistants may read, the page list, and a plain-text summary of owlf for AI assistants. Keep `llms.txt` in step with the service list on the page. It deliberately does not list towns: they change as areas open, so it points to the app's `/llms.txt` (app.owlf.one), which is always current.
+- `index.html` also carries structured data (JSON-LD: Organization and WebSite) in the head. Update it if the contact email or the legal name changes.
 - `COPY_GUIDELINES.md` — editorial rules used to keep website copy human, accurate and consistent.
 - `favicon.svg` — OWLF mark.
 - `assets/home-services-icon-set.png` — the supplied icon sheet, recoloured to the OWLF category palette while preserving the artwork and transparency.
