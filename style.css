@@ -252,6 +252,9 @@ h1 em, h2 em { color: var(--rust); font-weight: 400; }
 .footer-main nav { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-left: auto; }
 .footer-main nav a { color: #c3cec2; font-size: 10px; text-decoration: none; }
 .footer-main nav a:hover { color: white; }
+.footer-legal { margin: 0 auto; padding: 0 0 12px; color: #aebdb1; font-size: 11px; line-height: 1.55; }
+.footer-legal a { color: inherit; text-decoration: none; }
+.footer-legal a:hover { color: white; text-decoration: underline; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 12px; border-top: 1px solid rgb(235 241 232 / 15%); color: #91a298; font-size: 9px; }
 .footer-bottom a { color: inherit; text-decoration: none; }
 .footer-bottom a:hover { color: white; text-decoration: underline; }
